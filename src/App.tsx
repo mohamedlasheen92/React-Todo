@@ -1,3 +1,6 @@
+import { RouterProvider } from "react-router-dom"
+import router from "./routes"
+import { Toaster } from "react-hot-toast"
 
 
 function App() {
@@ -5,7 +8,9 @@ function App() {
 
   return (
     <>
-      <h1 className="text-purple-500 font-semibold italic text-center m-3">React Todo Project</h1>
+      <RouterProvider router={router} />
+
+      <Toaster />
 
     </>
   )
